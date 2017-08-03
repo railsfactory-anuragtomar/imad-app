@@ -18,11 +18,11 @@ app.get('/Article-one', function (req, res) {
 });
 
 app.get('/Article-two', function (req, res) {
-  res.send("Article two is served and will be requested");
+   res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
 });
 
 app.get('/Article-three', function (req, res) {
-  res.send("Article three is served and will be requested");
+   res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
 });
 
 app.get('/ui/madi.png', function (req, res) {
